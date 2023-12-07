@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --red: #a31621;
+            --white: #fcf7f8;
+            margin: 0;
+            padding: 0;
+           
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;    
+        }
+
+        .container{
+            position: relative;
+            background-color: var(--red);
+            width: 40vw;
+            height: 40vw;
+            top: calc(50vh - 15vw);
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .upper{
+            position: absolute;
+           z-index: 2;
+            height: 50%;
+            width: 100%;
+            background-color: var(--red);
+            display: flex;
+            overflow: visible;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .first{
+            width: 100%;
+            height: 40%;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .second{
+            /* position: relative; */
+            width: calc(32.6% * 2);
+            height: 30%;
+            background-color:var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .third{ 
+            /* position: relative; */
+            width: 33.3%;
+            height: 30%;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+
+        .square{
+            width: 3vw;
+            height: 3vw;
+            background-color: var(--red);
+            transform :  translate(50%,0) rotateZ(45deg);
+          
+            
+        }
+
+        .flot{
+            float: right;
+            transform :   translate(-50%,0) rotateZ(45deg);
+        }
+
+        .bigs-cont{
+            position: absolute;
+            width: 100%;
+            height: 48%;
+            z-index: 3;
+            top: 50%;
+            background-color: var(--red);
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+
+        .bigsquare{
+            transform:  rotateY(45deg) rotateZ(45deg); 
+            width: 30%;
+            height: 63%;
+            background-color: var(--white);
+            
+        }
+        .right{
+            transform : translate(50%,0)  rotateY(45deg) rotateZ(45deg); 
+            width: 30%;
+            height: 63%;
+            background-color: var(--white);
+            
+        }
+        .left{
+            transform :  translate(-50%,0) rotateY(45deg) rotateZ(45deg) ; 
+            width: 30%;
+            height: 63%;
+            background-color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <div class="third">
+                <div class="square"></div>
+                <div class="square flot"></div>
+            </div>
+            <div class="second">
+                <div class="square"></div>
+                <div class="square flot"></div>
+            </div>
+            <div class="first"> 
+                <div class="square"></div>
+                <div class="square flot"></div>
+            </div>
+        </div>
+
+        <div class="bigs-cont">
+        <div class="left"></div>
+        <div class="bigsquare"></div>
+        <div class="right"></div>
+    </div>
+    </div>
+</body>
+</html>
