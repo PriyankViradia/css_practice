@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;    
+        }
+       .container{
+        position: relative;
+        width: 25vw;
+        height: 25vw;
+        top: calc(50vh - 10vw);
+        margin: auto;
+        background: #23524a;
+       }
+       .first{
+        position : absolute;
+        width : 33.3%;
+        height :33.3%;
+        border: 1.5vw solid #94a187;
+        border-radius : 50%;
+        z-index:1;
+        top: 25%;
+        left: 50%;
+       transform: translate(-50%,-34.8%);
+        }
+
+        
+        .left{
+            position: absolute;
+            width : 33.3%;
+            height :33.3%;
+            top: 25%;
+            left: 50%;
+            transform: translate(-100%,-1.5%);
+            border: 1.5vw solid #94a187;
+            background-color: #94a187;
+            border-radius : 50%;
+            z-index: 2;
+        }
+        .right{
+            position: absolute;
+            width : 33.3%;
+            height :33.3%;
+            top: 25%;
+            left: 50%;
+            transform: translate(-1.5%,-1.5%);
+            border: 1.5vw solid #94a187;
+            border-radius : 50%;
+            z-index: 2;
+            background-color: #94a187;
+        }
+
+        .two{
+            position: relative;
+            width: 75%;
+            height: 33.3%;
+            background-color: #23524a;
+            z-index: 3;
+            border-radius: 40%;
+            top: 30%;
+            margin: auto;
+        }
+
+        .third{
+        position : absolute;
+        width : 33.3%;
+        height :33.3%;
+        border: 1.5vw solid #94a187;
+        border-radius : 50%;
+        z-index:1;
+        top: 25%;
+        left: 50%;
+       transform: translate(-50%,34.8%);
+        }
+
+        .left2{
+            position: absolute;
+            width :22.5%;
+            height : 50%;
+            top: 25%;
+            left: 50%;
+            transform: translate(-125%,-1.5%);
+            background-color: #94a187;
+            border-radius : 50%;
+            z-index: 4;
+        }
+        .right2{
+            position: absolute;
+            width :22.5%;
+            height : 50%;
+            top: 25%;
+            left: 50%;
+            transform: translate(25%,-1.5%);
+            background-color: #94a187;
+            border-radius : 50%;
+            z-index: 4;
+        }
+
+        </style>
+        <div class="container">
+           <div class="first"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        
+            <div class="two">
+                <div class="left2"></div>
+                <div class="right2"></div>
+            </div>
+           <div class="third"></div>
+        </div>
+</body>
+</html>
